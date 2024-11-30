@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.a {
+  width: 1000px;
+  height: 100px;
+  border: 1px solid pink;
+  margin-bottom: 20px;
+}
+.b {
+  width: 1000px;
+  height: 600px;
+  border: 1px solid purple;
+}
+.left {
+  box-sizing: border-box;
+  width: 495px;
+  height: 400px;
+  border: 1px solid red;
+  display: inline-block;
+}
+.right {
+  width: 495px;
+  height: 400px;
+  border: 1px solid darkgoldenrod;
+  display: inline-block;
+}
+.left_box {
+  height: 200px;
+  background: saddlebrown;
+}
+.right_box {
+  height: 200px;
+  background: firebrick;
+}
