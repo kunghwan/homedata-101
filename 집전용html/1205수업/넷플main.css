@@ -1,0 +1,18 @@
+div.img {
+  border: 2px solid tomato;
+  position: relative;
+}
+div.img img {
+  width: 100%;
+}
+div.img .ab {
+  position: absolute;
+}
+div.img h1 {
+  top: 30px;
+  left: 100px;
+}
+div.img div {
+  top: 90px;
+  left: 100px;
+}
