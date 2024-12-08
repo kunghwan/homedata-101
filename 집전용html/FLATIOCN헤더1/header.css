@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+  column-gap: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: lightgray;
+  height: 60px;
+  cursor: pointer;
+}
+
+header {
+  background-color: rgb(2, 25, 100);
+}
+
+/* 클래스명으로 flex를 가진 div 태그만 선택합니다. */
+div.flex {
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* header 바로 아래의 button만 선택합니다. 또는 클래스명으로 title 을 가진 button 태그를 선택합니다. */
+header > button,
+button.title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* 헤더 안의 모든 button에 마우스를 올릴 때는 선택합니다. */
+header button:hover {
+  color: white;
+}

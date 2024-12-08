@@ -1,0 +1,22 @@
+header {
+  border: 2px solid green;
+}
+
+header > ul {
+  border: 2px solid red;
+}
+
+.flex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  column-gap: 10px;
+}
+
+header {
+  justify-content: space-between;
+}

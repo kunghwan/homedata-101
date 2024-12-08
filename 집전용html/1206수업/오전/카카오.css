@@ -1,0 +1,41 @@
+#A {
+  border: 2px solid;
+}
+.kakao {
+  font-size: 50px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+}
+.main img {
+  width: 50px;
+  height: 50px;
+}
+button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+button:hover {
+  border-radius: 8px;
+  background: whitesmoke;
+}
+
+#B {
+  width: 40px;
+  height: 30px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+#B:hover {
+  background: whitesmoke;
+  border-radius: 50px;
+}
