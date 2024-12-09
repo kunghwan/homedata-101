@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <!-- float의 문제점 부모의 높이에 속하지않음 -->
+    <style>
+      #box1 {
+        background: red;
+        /* height: 40px; */
+        clear: both;
+      }
+      #outBox::before {
+        content: "abc";
+      }
+      #box1::after {
+        /* :: after  가상선택자 */
+        content: ""; /* after에 값이 들어갈수 있는 자리만 확보 */
+        clear: both;
+        display: table;
+        /* 위에 코드 2개를 꼭줘야함 부모가 높이가 있을떈 필요없음 */
+      }
+      .divBox {
+        float: left;
+        width: 100px;
+        border: 1px solid black;
+      }
+      .child {
+        float: left;
+      }
+      .child:nth-child(3) {
+        /* nth-child(자식번호) 첫번쨰자식 태그 - nth-child(1) , first-child
+           마지막 자식 태그 : last-child
+        */
+
+        float: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <div class="divBox">메뉴1</div>
+      <div class="divBox">메뉴2</div>
+      <div class="divBox">메뉴3</div>
+      <div class="divBox">메뉴4</div>
+    </div>
+    <div id="outBox">나는 메뉴보다 아래쪽에 있어야되</div>
+    <div>나는나는?</div>
+    <div>나는나는?</div>
+    <div id="floatBox">
+      <div class="child">박스1</div>
+      <div class="child">박스2</div>
+      <div class="child">박스3</div>
+    </div>
+    <div id="outBox2">나는 박스 밖이다.!!</div>
+  </body>
+</html>
+<!-- 
+   카멜(낙타혹) 표기법 -> 변수, 함수(메서드) , id
+   tableBlackWhite
+   두번째단어부터의 첫글자를 대문자로 표기
+
+   스네이크 표기법
+   table_black_white -> 데이터베이스 컬럼, class
+   단어 사이사이에  _를 붙여서 표기한다.
+
+   헝가리안 표기법
+   이름에 접두어를 포함하여 짓는다.
+   number_age
+
+   981015 -> 981015
+   020811 -> 20811
+   string_birth
+   number_birth
+   
+   파스칼 표기법 -> CLASS 명, TABLE, 객체명(JS 기준)
+   TableBlackWhite
+   Table_Black_White
+   첫번째 단어 부터 첫글자를 대문자로 표기
+   
+-->

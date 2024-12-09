@@ -1,0 +1,43 @@
+.orange {
+  background: orange;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: blue;
+}
+.pink {
+  background: pink;
+}
+.item {
+  height: 100px;
+  width: 100px;
+}
+#wrap1 {
+  display: flex;
+  width: 1000px;
+  border: 1px solid black;
+  height: 250px;
+  align-items: center;
+  /* 교차축 자식 부모 둘다 건드리기 가능*/
+  justify-content: space-between;
+  /* 주축 자식이 주축 못건드림 */
+}
+
+#wrap2 {
+  display: flex;
+  border: 1px solid black;
+  width: 1000px;
+  height: 300px;
+  justify-content: space-between;
+}
+#wrap2 .orange {
+  align-self: end;
+}
+#wrap2 .green {
+  align-self: end;
+}
+#wrap2 .pink {
+  align-self: center;
+}
