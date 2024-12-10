@@ -1,0 +1,109 @@
+* {
+  list-style-type: none;
+}
+.main {
+  border: 1px solid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  min-width: 500px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+.wrap1 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: whitesmoke;
+}
+.r {
+  text-align: right;
+  flex: 1;
+  padding: 20px;
+}
+.r1 button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.r2 > h3 {
+  text-align: left;
+}
+.input {
+  border: 2px solid;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  max-width: 300px;
+}
+.input form {
+  display: flex;
+}
+.input form input {
+  padding-left: 10px;
+  flex: 1;
+  border: 1px solid lightgray;
+  border-right: 0;
+  outline: none;
+}
+.input form input:focus {
+  border-color: green;
+}
+.input form button.b {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  background: greenyellow;
+  color: white;
+  border-radius: 0;
+  cursor: pointer;
+}
+.input form ::placeholder {
+  color: red;
+}
+
+.sns h3 {
+  text-align: left;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+.btns .b1 {
+  border-radius: 50px;
+  background: black;
+  color: aliceblue;
+  width: 40px;
+  height: 40px;
+}
+.btns .b2 {
+  border-radius: 50px;
+  background: black;
+  color: aliceblue;
+  width: 40px;
+  height: 40px;
+}
+.btns .b3 {
+  border-radius: 50px;
+  background: black;
+  color: aliceblue;
+  width: 40px;
+  height: 40px;
+}
+.signup {
+  border: 2px solid black;
+  background: transparent;
+}
+span {
+  color: blue;
+  cursor: pointer;
+}
+span:hover {
+  text-decoration: underline;
+}
