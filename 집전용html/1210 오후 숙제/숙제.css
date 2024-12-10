@@ -1,0 +1,63 @@
+#header {
+  background: blue;
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 6;
+  margin-bottom: 20px;
+}
+.yellow,
+.red,
+.white,
+.brown {
+  width: 100px;
+  height: 100px;
+}
+.yellow {
+  background: yellow;
+}
+.brown {
+  background: brown;
+}
+.red {
+  background: red;
+}
+.white {
+  background: white;
+}
+#header_second {
+  position: relative;
+  background: blue;
+  width: calc(1000px - 40px);
+  height: 200px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: center;
+  line-height: 6;
+  padding: 8px 0px;
+  padding-left: 40px;
+}
+#header_second .red,
+#header_second .white {
+  margin-left: 20px;
+}
+
+.login,
+.sign {
+  position: absolute;
+  background-color: brown;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  right: 930px;
+  top: 410px;
+}
+.login {
+  right: 1050px;
+}
