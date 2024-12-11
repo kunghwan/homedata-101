@@ -1,0 +1,48 @@
+div.wrap {
+  border: 1px solid;
+  min-width: 500px;
+  display: flex;
+}
+div.left {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right {
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  /* text-align: right; */
+}
+
+.right button.close {
+  border: none;
+  background: transparent;
+}
+h3.login {
+  text-align: left;
+  border: 3px solid;
+}
+div.input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  max-width: 300px;
+  border: 1px solid;
+}
+.input form {
+  display: flex;
+}
+.input form input {
+  padding-left: 10px;
+  flex: 1;
+}
+button.btn {
+  background: green;
+  height: 40px;
+  padding: 0 20px;
+  text-align: center;
+}
