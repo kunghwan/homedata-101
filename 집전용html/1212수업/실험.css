@@ -1,0 +1,6 @@
+.my_img {
+  display: none;
+}
+.my_box:onclic .my_img {
+  display: block;
+}

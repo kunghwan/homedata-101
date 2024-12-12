@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#header .top {
+  padding-right: 15px;
+  text-align: right;
+}
+#header .top .top_texts {
+  display: flex;
+  justify-content: end;
+  padding: 7px 0;
+}
+#header .top .top_texts .top_text {
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+}
+#header .top .top_texts .top_text:nth-child(2)::before {
+  content: "";
+  border: 1px solid gray;
+  /* 높이를 줘야함 */
+  position: absolute;
+  height: 20px;
+  left: -15px;
+}
+#header .top .top_texts .top_text:nth-child(2)::after {
+  content: "";
+  border: 1px solid gray;
+  position: absolute;
+  height: 20px;
+  left: 80px;
+  /* right: -15px; */
+}
+
+#header .nav {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#header .nav .menu_list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  font-size: 25px;
+}
+#header .nav .menu_list .menu {
+  cursor: pointer;
+  padding: 5px 25px;
+  position: relative;
+}
+#header .nav .menu_list .menu::before {
+  content: "";
+  border-bottom: 2px solid red;
+  /* 너비를 가져야함 before하고 after를 못가짐 인나잇종류여서 */
+  /* before 최초위치 글자 바로밑 */
+  /* width: 100%; */
+  display: block;
+  /* block 너비 높이 지정 가능 */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  /* 너비 어디서부터 애니메이션 할건지 지정 */
+  width: 0%;
+  transition: 1s ease;
+}
+/* hover는 화면에 표시가 안되는 것은 적용이 안됨 */
+#header .nav .menu_list .menu:hover::before {
+  width: 100%;
+}
+
+#header .nav .sub_menu_list {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  background: #eee;
+  left: 0px;
+  padding: 50px 0;
+  z-index: 2;
+  opacity: 0;
+}
+/* display: none; 화면을 안보이게 하는 경우 투명도 0,높이0으로줄때*/
+#header .nav .menu_list:hover ~ .sub_menu_list {
+  opacity: 1;
+}
+/* hover 통제할수 있는거 자기 자신이거나 하위태그 부모는 안됨 ~는 형제태그 의미*/
+
+#header .nav .sub_menu_list .sub_menu {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* 자식들이 커야 여러줄 배치가 됨 */
+}
+#header .nav .sub_menu_list .sub_menu .sub {
+  width: 20%;
+  text-align: center;
+  padding: 20px 0;
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#main .img_box {
+  width: calc(25% - 5px);
+  /* flew-grow 비율, flex-shrink 공간부족여부 */
+  flex: 1 1 calc(25% - 5px);
+}
+#main .img_box:nth-child(1),
+#main .img_box:nth-child(2),
+#main .img_box:nth-child(3),
+#main .img_box:nth-child(4) {
+  cursor: pointer;
+  position: relative;
+}
+#main .img_box:nth-child(1):hover::before,
+#main .img_box:nth-child(2):hover::before,
+#main .img_box:nth-child(3):hover::before,
+#main .img_box:nth-child(4):hover::before {
+  width: 100%;
+}
+#main .img_box .label {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  /* opacity: 0; */
+}
+#main .img_box:nth-child(1):hover > label {
+  opacity: 1;
+}
+/* #main .img_box .label {
+  display: none;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  z-index: 3;
+} */

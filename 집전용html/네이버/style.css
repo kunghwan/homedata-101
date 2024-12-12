@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.login_box {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login_box p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.login_box button {
+  cursor: pointer;
+  border: none;
+}
+
+.login_box button.naver {
+  height: 40px;
+  background-color: rgb(24, 210, 24);
+  color: white;
+  border-radius: 4px;
+}
+
+.login_box ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 14px;
+}
+
+.login_box ul button {
+  background-color: transparent;
+  font-size: 12px;
+}

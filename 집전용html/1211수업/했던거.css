@@ -23,7 +23,6 @@ div.left {
   background: transparent;
 }
 h3.login {
-  text-align: left;
   border: 3px solid;
 }
 div.input {
@@ -44,5 +43,4 @@ button.btn {
   background: green;
   height: 40px;
   padding: 0 20px;
-  text-align: center;
 }
