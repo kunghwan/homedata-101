@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrap {
+  width: 1500px;
+  margin: 0 auto;
+}
+#header {
+  text-align: end;
+}
+#header .top {
+  padding: 10px 0;
+}
+#header .top .top_text .a {
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+#header .top .top_text .a:nth-child(2)::before {
+  content: "";
+  border: 2px solid gray;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+#header .top .top_text .a:nth-child(2)::after {
+  content: "";
+  border: 2px solid gray;
+  height: 20px;
+  position: absolute;
+  left: 89px;
+}
+div.menu_header {
+  margin-top: 20px;
+}
+div.menu_header .menu_list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-bottom: 1px solid gray;
+}
+div.menu_header .menu_list .menu {
+  border: none;
+  background: transparent;
+  display: flex;
+  padding: 15px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+}
+div.menu_header .menu_list .menu:hover::before {
+  content: "";
+  border-bottom: 1px solid pink;
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+  width: 0%;
+  display: block;
+}
+div.menu_header .menu_list .menu:hover::before {
+  width: 100%;
+}
+.menu_header_2 {
+  background: #eee;
+  width: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+div.menu_header .menu_list:hover ~ .menu_header_2 {
+  opacity: 1;
+}
+.menu_header_2 {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.menu_header_2 .menu_2 {
+  width: 20%;
+  text-align: center;
+  padding: 20px 0;
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.imgBox {
+  width: calc(25% - 5px);
+  flex: 1 1 calc(25% - 5px);
+  position: relative;
+}
+.imgBox .big {
+  position: absolute;
+  opacity: 0;
+  width: 600px;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+}
+.imgBox:hover .big {
+  opacity: 1;
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* 이거 없으면 사진이 이상하게 나옴 */
